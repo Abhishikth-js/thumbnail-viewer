@@ -100,9 +100,9 @@ ThumbnailViewer::ThumbnailViewer(int argc, char *argv[]) {
     gtk_container_add(GTK_CONTAINER(scrolled_window), flowbox);
     gtk_container_add(GTK_CONTAINER(window), scrolled_window);
 
-
+    // specify the path to you folder here
     // relative path not supported, specify absolute path
-    folder_path = "/home/ee212468/Documents/images";
+    folder_path = "/home/userDiretory/Documents/images";
     populateFlowbox(flowbox, folder_path);
 
     g_signal_connect(G_OBJECT(window), "destroy", G_CALLBACK(gtk_main_quit), NULL);
